@@ -1,4 +1,4 @@
-# Base class for media objects ENC
+# Base class for media objects E
 class Media:
     def __init__(self, title: str, rating: float, overview: str, genres: list, poster_url: str = "", cast: str = ""):
         self.title = title
@@ -11,7 +11,7 @@ class Media:
     def get_info(self):
         return f"Title: {self.title}, Rating: {self.rating}"
 
-# Movie class inherits from Media and adds specific attributes POL
+# Movie class inherits from Media and adds specific attributes P
 class Movie(Media):
     def __init__(self, title: str, rating: float, overview: str, genres: list, release_year: str, duration: int, poster_url: str = "", cast: str = ""):
         super().__init__(title, rating, overview, genres, poster_url, cast)
